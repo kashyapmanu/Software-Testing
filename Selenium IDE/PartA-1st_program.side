@@ -1,0 +1,231 @@
+{
+  "id": "13363eb7-d2a7-482b-bdf6-e2aa5b0050c7",
+  "version": "2.0",
+  "name": "Google",
+  "url": "https://www.google.com",
+  "tests": [{
+    "id": "275a970a-7d90-4479-8188-f1fc6d547148",
+    "name": "1. Verify Google sign-in using id",
+    "commands": [{
+      "id": "f886c36c-4c40-412b-bb74-f81f5b90a233",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1aa48f1c-c877-43ea-b67e-645eab43de71",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "957x713",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1930de17-ab8d-4550-937b-82ce8d6674d0",
+      "comment": "",
+      "command": "click",
+      "target": "id=gb_70",
+      "targets": [
+        ["id=gb_70", "id"],
+        ["linkText=Sign in", "linkText"],
+        ["css=#gb_70", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//a[@id='gb_70']", "xpath:attributes"],
+        ["xpath=//div[@id='gbw']/div/div/div[2]/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/')]", "xpath:href"],
+        ["xpath=//div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e8228f-030c-4d07-9026-34efa49b822a",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sign in - Google Accounts",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac0fe115-dd69-4055-a8e5-8758837026e8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6777ef8c-d2bc-416d-b181-c55b3b49a870",
+    "name": "2. Verify the working of Google Search button for the specified search using name",
+    "commands": [{
+      "id": "8bf666a1-1e75-4934-afbf-09b10bb15122",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a59603b2-a2c1-4853-95b5-d8e9cf90848e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "957x713",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0c24141-5bdf-40f5-895e-25d4609e89de",
+      "comment": "",
+      "command": "click",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ede13ce8-ebd9-4277-bae0-526a15b2f412",
+      "comment": "",
+      "command": "type",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "india"
+    }, {
+      "id": "44581285-e415-46ed-a743-03242b97df5f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "5d1fea8f-e156-4128-bdf8-9a6152a34188",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "india - Google Search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "76598ed3-7998-4a0f-8ebb-49d895a90493",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "69056eb1-7b68-4c26-81ee-b2ccd5900a8c",
+    "name": "3. Verify the link to Gmail homepage in Google homepage using linktext",
+    "commands": [{
+      "id": "95b1c90c-9dce-44c0-80e7-1175c812e535",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fab1d87a-d737-48b6-bfb6-e10d15f37b85",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "957x713",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52343d3e-5dae-459d-9c50-bdd0a61d94fb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_h:nth-child(1) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?tab=wm&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cc8cdde-5d93-4922-9d3d-807983afffe5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Gmail - Free Storage and Email from Google",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d2f0e130-22df-4409-aaa3-2398ffb3f447",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "faeb3c50-8f5d-4b87-aaf6-ab3f1b028454",
+    "name": "4. Verify the link to Google images homepage in Google homepage using xpath",
+    "commands": [{
+      "id": "53db245b-5426-444a-b214-438470774018",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "35df6a7f-99ca-4d02-9370-1f3d8cf2201e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "957x713",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cdd06845-44a1-4669-b80c-6fb6a289a170",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(text(),'Images')]",
+      "targets": [
+        ["linkText=Images", "linkText"],
+        ["css=.gb_h:nth-child(2) > .gb_g", "css:finder"],
+        ["xpath=//a[contains(text(),'Images')]", "xpath:link"],
+        ["xpath=//div[@id='gbw']/div/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.google.co.in/imghp?hl=en&tab=wi&ogbl')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Images')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4639531a-6bcd-4cf5-a8a6-8e2f921474c5",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Google Images",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f358c317-7721-4e4d-a7a5-49db069ee09a",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6b73d534-752d-444a-93e3-ef66811f593f",
+    "name": "Part A - 1st program",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["275a970a-7d90-4479-8188-f1fc6d547148", "6777ef8c-d2bc-416d-b181-c55b3b49a870", "69056eb1-7b68-4c26-81ee-b2ccd5900a8c", "faeb3c50-8f5d-4b87-aaf6-ab3f1b028454"]
+  }],
+  "urls": ["https://www.google.com/"],
+  "plugins": []
+}

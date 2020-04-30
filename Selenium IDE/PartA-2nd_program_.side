@@ -1,0 +1,481 @@
+{
+  "id": "7f9f70cc-2370-4b25-82be-5d23db0f4eb1",
+  "version": "2.0",
+  "name": "Facebook",
+  "url": "https://www.facebook.com",
+  "tests": [{
+    "id": "f3d824ab-1f3d-464d-bae3-96d73f8ca7e6",
+    "name": "1. Locate the email input box using tag and class",
+    "commands": [{
+      "id": "1301f871-99c4-4ed8-92a8-31f5962a3f09",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbb3e20c-12e4-416f-9b5f-f3b277db5159",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1533x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d88a6e7-d837-4bb3-af08-53e84459b805",
+      "comment": "",
+      "command": "click",
+      "target": "css=input.inputtext.login_form_input_box",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dbccca7d-870e-4932-a217-aaa73c4435d2",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.inputtext.login_form_input_box",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "cb6cf72f-a91e-402e-a81a-ca85f5fb20ae",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "106c8b8c-6bc4-4dce-a6e0-186c6bfce419",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "fdc5f411-3159-46c1-88bf-10807eac1ea9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbutton",
+      "targets": [
+        ["id=u_0_2", "id"],
+        ["css=#u_0_2", "css:finder"],
+        ["xpath=//input[@id='u_0_2']", "xpath:attributes"],
+        ["xpath=//label[@id='loginbutton']/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c06751a-6491-43ca-881b-a7208ba08c1e",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "941d50fa-4b39-4d05-9db4-21f1308e4f31",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.\\_2s25", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='js_0']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout.php?h=AfeSIJ-7uGXaSf03&t=1578560297&ref=mb')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "892a3a84-c1c2-42ab-a273-f5c2ea4781d5",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "0d7b7e93-4dce-43d7-90d1-efd5cb381bff",
+    "name": "2. Locate the password input box using tag and id",
+    "commands": [{
+      "id": "5ab59486-b910-4ce2-8e88-cfc28c02c166",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50642fa3-a074-47df-82d3-b22e10925df1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1533x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c64886ab-1d3a-4686-b41b-58c5cd9e1c2a",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93789b70-c3d1-45b3-833f-bc5b5224ba85",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "bb508d9f-98a7-4c11-a912-1ed73a4dc9c0",
+      "comment": "",
+      "command": "click",
+      "target": "css=input#pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4fdbcdd-93b2-4e0c-93c1-b85b77537162",
+      "comment": "",
+      "command": "type",
+      "target": "css=input#pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "83553e4b-e477-4912-b16c-dd04913881d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbutton",
+      "targets": [
+        ["id=u_0_2", "id"],
+        ["css=#u_0_2", "css:finder"],
+        ["xpath=//input[@id='u_0_2']", "xpath:attributes"],
+        ["xpath=//label[@id='loginbutton']/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4086ef3-cabb-4a23-92b2-58078267a4a6",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a2221c1-c9c8-41b6-8ddb-54f95b03d697",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.\\_2s25", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='js_0']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout.php?h=AfeSIJ-7uGXaSf03&t=1578560297&ref=mb')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "259e9040-b1ba-4036-8bc6-8ed3247cf877",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "700a2419-c7b5-40d8-ac36-29b9f8b5a57d",
+    "name": "3. Locate the login button using tag and attribute",
+    "commands": [{
+      "id": "a67d6766-44aa-4325-a893-d73e29ba98c9",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41140d00-2b18-4ef7-9f55-26bbccef4068",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1533x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b3e6210-f1bf-4423-a61b-5d236302c98f",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03e7fede-f969-433e-a078-9fadbf22c3c4",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "605bfd6e-1769-4870-8d26-96a35737830b",
+      "comment": "",
+      "command": "click",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21257aff-cd75-4795-a9b9-0858df4591c7",
+      "comment": "",
+      "command": "type",
+      "target": "id=pass",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "0dc5e1b6-f691-4ae7-b8b7-2d51865fdc98",
+      "comment": "",
+      "command": "click",
+      "target": "css=input[value=\"Log In\"]",
+      "targets": [
+        ["id=u_0_2", "id"],
+        ["css=#u_0_2", "css:finder"],
+        ["xpath=//input[@id='u_0_2']", "xpath:attributes"],
+        ["xpath=//label[@id='loginbutton']/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "35e8225f-516d-4d5d-aab6-faf1132a2244",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "277e9692-c288-42c0-9807-201450953088",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.\\_2s25", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='js_0']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout.php?h=AfeSIJ-7uGXaSf03&t=1578560297&ref=mb')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b51e6e5-e828-4f4a-a3e8-fe0b3d46c02f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4060c253-6f28-4456-8783-cac2523c506d",
+    "name": "4. Locate the 'Email or Phone' and 'Password' input boxes using tag, class and attribute",
+    "commands": [{
+      "id": "ddf05f7d-8a01-4a0d-9359-9ce303fb2cd2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2175231b-4318-401a-a9a0-2ebf469dfa09",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1533x845",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de394e72-344d-458f-9cf6-b1eff3f35119",
+      "comment": "",
+      "command": "click",
+      "target": "css=input.inputtext.login_form_input_box[id=email]",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eea61d16-6d0d-4036-bfd4-2cb4007f68c9",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.inputtext.login_form_input_box[id=email]",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td/input", "xpath:idRelative"],
+        ["xpath=//td/input", "xpath:position"]
+      ],
+      "value": "username"
+    }, {
+      "id": "5898c139-30c8-40d9-a2ae-54431a5f157a",
+      "comment": "",
+      "command": "click",
+      "target": "css=input.inputtext.login_form_input_box[id=pass]",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8565b8e5-21de-4c3f-b244-cb5fd201bda1",
+      "comment": "",
+      "command": "type",
+      "target": "css=input.inputtext.login_form_input_box[id=pass]",
+      "targets": [
+        ["id=pass", "id"],
+        ["name=pass", "name"],
+        ["css=#pass", "css:finder"],
+        ["xpath=//input[@id='pass']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "password"
+    }, {
+      "id": "77244377-ffed-4713-ab2a-8b0f0f28ca32",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbutton",
+      "targets": [
+        ["id=u_0_2", "id"],
+        ["css=#u_0_2", "css:finder"],
+        ["xpath=//input[@id='u_0_2']", "xpath:attributes"],
+        ["xpath=//label[@id='loginbutton']/input", "xpath:idRelative"],
+        ["xpath=//label/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6892aa5c-fcc6-4591-b983-7f9ff565f8c2",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4e7eb703-8bef-4c02-bccb-70c772378927",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=.\\_2s25", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='js_0']/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/logout.php?h=AfeSIJ-7uGXaSf03&t=1578560297&ref=mb')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "824bdf6c-2f46-432a-ab87-dc21b8ee6f61",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1180bd36-592c-4c67-b47e-5b0e79347980",
+    "name": "PartA - 2nd program",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f3d824ab-1f3d-464d-bae3-96d73f8ca7e6", "0d7b7e93-4dce-43d7-90d1-efd5cb381bff", "700a2419-c7b5-40d8-ac36-29b9f8b5a57d", "4060c253-6f28-4456-8783-cac2523c506d"]
+  }],
+  "urls": ["https://www.facebook.com/"],
+  "plugins": []
+}
